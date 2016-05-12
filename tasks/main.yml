@@ -20,7 +20,7 @@
 
 - name: Add upstream varnish APT key
   apt_key:
-    url=https://repo.varnish-cache.org/GPG-key.txt
+    url: https://repo.varnish-cache.org/GPG-key.txt
   when: varnish_server_upstream|d() and varnish_server_upstream
   tags: [ 'role::varnish_server:packages' ]
 
@@ -34,8 +34,8 @@
 
 - name: Install Varnish.
   apt:
-    name=varnish
-    state=installed
+    name: varnish
+    state: installed
 
 - name: Copy a Varnish default configuration.
   template:
