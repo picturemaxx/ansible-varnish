@@ -1,15 +1,13 @@
 ---
 dependencies:
-  - role: debops.secret
-
-  - role: debops.ferm
-    ferm_input_list:
-
-      - type: 'dport_accept'
-        dport: [ '{{ varnish_server_port }}' ]
-        saddr: '{{ varnish_server_allow }}'
-        weight: '50'
-        filename: 'varnish_dependency_accept'
+#  - role: debops.ferm
+#    ferm_input_list:
+#
+#      - type: 'dport_accept'
+#        dport: [ '{{ varnish_server_port }}' ]
+#        saddr: '{{ varnish_server_allow }}'
+#        weight: '50'
+#        filename: 'varnish_dependency_accept'
 
 galaxy_info:
   author: Jürgen Waibel
