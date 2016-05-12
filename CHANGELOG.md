@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v1.0.1:
+
+* 128b598: Remove another unneeded dependency
+
 v1.0.0:
 
 * 111e597: initial version
