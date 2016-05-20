@@ -1,12 +1,12 @@
 Role Name
 =========
 
-An Ansible Role that installs Varnish on Debian Linux.
+An Ansible Role that installs Varnish on Debian and Ubuntu Linux.
 
 Requirements
 ------------
 
-The project is using parts of the debops Project
+The project is using parts of the debops Project.
 
 Role Variables
 --------------
@@ -18,22 +18,23 @@ tbd
 Dependencies
 ------------
 
-debops.secret
-debops.ferm
-debops.tcpwrappers
+None.
 
 Example Playbook
 ----------------
 
 The default settings assume varnish to be run on the same server as the webserver.
-Varnish by default will listen to any ip address on port 6081 and forwards all requests to localhost port 8080
-Be sure to set those variables to fit your needs. I will add some working examples below.
-
-tbd
+Varnish by default will listen to any ip address on port `6081` and forwards all requests to localhost port `8080`
+Be sure to set those variables to fit your needs.
 
 License
 -------
 
+GPLv3
 
 Author Information
 ------------------
+
+Jürgen Waibel <info@jwd-software.de>
+Michael Weinrich <michael.weinrich@picturemaxx.com>
+
