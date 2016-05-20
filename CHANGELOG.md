@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v1.0.2:
+
+* d924bd9: Update README
+
 v1.0.1:
 
 * 128b598: Remove another unneeded dependency
