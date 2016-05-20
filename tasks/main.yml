@@ -44,6 +44,8 @@
     owner: root
     group: root
     mode: 0644
+  notify: [ 'Restart varnish' ]
+  tags: [ 'role::varnish:config' ]
 
 - name: Install Debian systemd service unit
   template:
