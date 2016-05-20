@@ -11,12 +11,12 @@
 START=yes
 
 # Maximum number of open files (for ulimit -n)
-NFILES=131072
+NFILES={{ varnish_nfiles }}
 
 # Maximum locked memory size (for ulimit -l)
 # Used for locking the shared memory log in memory.  If you increase log size,
 # you need to increase this number as well
-MEMLOCK=82000
+MEMLOCK={{ varnish_memlock }}
 
 DAEMON_OPTS="-a {{ varnish_server_bind_address }}:{{ varnish_server_port }} \
              -T {{ varnish_admin_bind_address }}:{{ varnish_admin_port }} \
