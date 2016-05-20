@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v1.1.1:
+
+* 9eddefa: Add tag and restart on config change
+
 v1.1.0:
 
 * dfa1a7e: Add a variable to make memory available to varnish configurable
