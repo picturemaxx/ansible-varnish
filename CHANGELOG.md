@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v1.1.0:
+
+* dfa1a7e: Add a variable to make memory available to varnish configurable
+* fb49a29: Use existing variables in template
+* faa0f2e: Fix typos
+
 v1.0.2:
 
 * d924bd9: Update README
