@@ -65,11 +65,11 @@ varnish_nfiles: 131072
 varnish_memlock: 82000
 
 # Maximum number of threads (for ulimit -u)
-vanrish_nprocs: "unlimited"
+varnish_nprocs: "unlimited"
 
 # Maximum size of corefile (for ulimit -c). Default in Fedora is 0
 # DAEMON_COREFILE_LIMIT="unlimited"
-vanrish_corefile_limit: "unlimited"
+varnish_corefile_limit: "unlimited"
 
 # Set this to 1 to make init script reload try to switch vcl without restart.
 # To make this work, you need to set the following variables
