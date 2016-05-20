@@ -78,4 +78,7 @@ varnish_corefile_limit: "unlimited"
 # use Alternative 3, Advanced configuration, below
 #RELOAD_VCL: 1
 
+# Size of memory available to varnish. Default is 256m
+varnish_memory: "256m"
+
 # tbd

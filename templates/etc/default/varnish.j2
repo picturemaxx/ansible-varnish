@@ -22,4 +22,4 @@ DAEMON_OPTS="-a {{ varnish_server_bind_address }}:{{ varnish_server_port }} \
              -T {{ varnish_admin_bind_address }}:{{ varnish_admin_port }} \
              -f /etc/varnish/default.vcl \
              -S /etc/varnish/secret \
-             -s malloc,256m"
+             -s malloc,{{ varnish_memory }}"
