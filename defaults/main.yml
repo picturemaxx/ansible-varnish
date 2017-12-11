@@ -27,7 +27,7 @@ varnish_server_upstream: False
 # .. envvar:: varnish_upstream_version
 #
 # use this varnish version if installing from upstream repo
-varnish_upstream_version: 4.1
+varnish_upstream_version: 'main'
 
 # -------------------------------------
 #

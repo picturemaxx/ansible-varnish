@@ -20,13 +20,13 @@
 
 - name: Add upstream varnish APT key
   apt_key:
-    url: https://repo.varnish-cache.org/GPG-key.txt
+    url: https://packagecloud.io/varnishcache/varnish5/gpgkey
   when: varnish_server_upstream|d() and varnish_server_upstream
   tags: [ 'role::varnish_server:packages' ]
 
 - name: Add upstream varnish APT repository
   apt_repository:
-    repo: 'deb https://repo.varnish-cache.org/{{ ansible_distribution|lower() }} {{ ansible_distribution_release }} varnish-{{ varnish_upstream_version }}'
+    repo: 'deb https://packagecloud.io/varnishcache/varnish5/{{ ansible_distribution|lower() }} {{ ansible_distribution_release }} {{ varnish_upstream_version }}'
     state: 'present'
     update_cache: True
   when: varnish_server_upstream|d() and varnish_server_upstream
@@ -36,6 +36,7 @@
   apt:
     name: varnish
     state: installed
+    update_cache: yes
 
 - name: Copy a Varnish default configuration.
   template:
