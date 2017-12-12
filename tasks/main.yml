@@ -26,7 +26,7 @@
 
 - name: Add upstream varnish APT repository
   apt_repository:
-    repo: 'deb https://packagecloud.io/varnishcache/varnish5/{{ ansible_distribution|lower() }} {{ ansible_distribution_release }} {{ varnish_upstream_version }}'
+    repo: 'deb https://packagecloud.io/varnishcache/varnish{{ varnish_version }}/{{ ansible_distribution|lower() }} {{ ansible_distribution_release }} main'
     state: 'present'
     update_cache: True
   when: varnish_server_upstream|d() and varnish_server_upstream
